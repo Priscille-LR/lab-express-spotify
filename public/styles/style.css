@@ -1,0 +1,186 @@
+:root {
+  --white: #f7f9f9;
+  --bg-pale: #f5e8e4;
+  --bg-orange: #f5c7a9;
+  --orange: #d1512d;
+  --aubergine: #411530;
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  padding: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+
+header img {
+  width: 30%;
+  height: 100px;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  color: var(--bg-orange);
+}
+
+footer {
+  background-color: var(--aubergine);
+  color: var(--white);
+  padding: 2rem;
+}
+
+footer p {
+  margin: 1rem 0;
+}
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/spotify-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 95vh;
+}
+
+.homepage form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem;
+}
+
+.homepage input {
+  border-radius: 5px;
+  width: 40%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid var(--aubergine);
+}
+
+.homepage button {
+  background-color: var(--orange);
+  padding: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.homepage button:hover {
+  background-color: var(--bg-orange);
+  color: var(--aubergine);
+}
+
+.artists,
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.artist-card,
+.album-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+  max-height: 500px;
+  margin: 3rem;
+  color: black;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.artist-card img,
+.album-card img {
+  flex: 80%;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.artist-card h2,
+.album-card h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.artist-card a,
+.album-card a {
+  text-decoration: none;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 50%;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.card-content {
+  background-color: var(--aubergine);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 20%;
+  min-height: 80px;
+  padding: 1rem 0;
+}
+
+.tracks {
+  background-color: var(--bg-pale);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--aubergine);
+  width: 50%;
+  margin: 1rem;
+  border-radius: 30px;
+  border: 1px solid var(--aubergine);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.track p {
+  color: var(--white);
+  margin: 1rem;
+}
