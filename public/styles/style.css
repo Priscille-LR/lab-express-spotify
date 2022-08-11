@@ -41,7 +41,7 @@ header {
 
 header img {
   width: 30%;
-  height: 100px;
+  height: auto;
 }
 
 header h1 {
@@ -75,13 +75,14 @@ footer p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  margin: 2rem;
+  width: 60%;
+  padding: 4rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .homepage input {
   border-radius: 5px;
-  width: 40%;
+  width: 60%;
   padding: 1rem;
   margin: 1rem;
   border: 1px solid var(--aubergine);
@@ -146,6 +147,12 @@ footer p {
   width: 50%;
   border-radius: 3px;
   text-align: center;
+}
+
+.artist-card a:hover,
+.album-card a:hover {
+  background-color: var(--bg-orange);
+  color: var(--aubergine);
 }
 
 .card-content {
